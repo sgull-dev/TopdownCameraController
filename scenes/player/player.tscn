@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cxtlysde7enn2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_v3lxi"]
+height = 1.8
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.898638, 0)
+shape = SubResource("CapsuleShape3D_v3lxi")
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1.39188, 0, 0, 0, 1.39188, 0, 0, 0, 1.39188, 0, 1.39504, 0)
+radius = 0.315946
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1.39188, 0, 0, 0, 1.39188, 0, 0, 0, 1.39188, 0, 0.705822, 0)
+size = Vector3(0.546323, 1, 0.4825)
