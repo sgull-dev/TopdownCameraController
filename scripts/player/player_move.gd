@@ -21,15 +21,17 @@ func _physics_process(delta):
 		velocity.y = 0.0
 	velocity.y -= fall_gravity * delta
 	
-	#apply movement in direction of input
+	#make movement vector
 	var move_dir = input_dir.normalized() * get_move_speed(input_dir.length())  * delta
+	#smoothen movement
 	velocity.x = lerp(velocity.x,move_dir.x, 0.2)
 	velocity.z = lerp(velocity.z,move_dir.z, 0.2)
-
+	#apply movement
 	move_and_slide()
 	
+	#Rotate the model to face movement direction
 	model.rotate_to_movement(input_dir.normalized())
-	#send  data
+	#send data
 	GameData.player_position = global_position
 	GameData.player_move_direction = input_dir.normalized()
 
