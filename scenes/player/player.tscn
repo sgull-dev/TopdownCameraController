@@ -24,8 +24,8 @@ script = ExtResource("2_ie0nu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.27814)
 size = Vector3(0.2, 0.25, 0.5)
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1.39188, 0, 0, 0, 1.39188, 0, 0, 0, 1.39188, 0, 0.705822, 0)
+[node name="CSGBox3D2" type="CSGBox3D" parent="Model"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.495171, 0)
 size = Vector3(0.546323, 1, 0.4825)
 
 [node name="GroundCast" type="ShapeCast3D" parent="."]
