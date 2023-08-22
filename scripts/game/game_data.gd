@@ -7,10 +7,6 @@ var player_position : Vector3
 var player_move_direction : Vector3
 var cam_rotation : float
 
-#vars for 3rd person
-var player_position_grounded : Vector3
-var player_3rd_look_dir : Vector3
-
 #vars for gamestate
 enum GAME_STATE {PLAY, DIALOGUE, CUTSCENE, MENU}
 var game_state = GAME_STATE.PLAY
